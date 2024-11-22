@@ -1,0 +1,105 @@
+
+
+.mini-media-scroller {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    background-color: #222222;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: none;
+}
+
+.mini-media-element {
+    width: 150px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mini-media-element > img {
+    inline-size: 100%;
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+    aspect-ratio: 16 / 9;
+}
+
+.mini-snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.mini-snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.mini-media-element :hover {
+    transform: translateY(5px);
+    transition: .5s ease-in-out;
+    box-shadow: 0px 7px 10px rgba(104, 104, 104, 0.5);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    text-align: center;
+}
+
+.option {
+    width: 20px;
+    background-color: #222222;
+    color: white;
+    border-radius: 10px;
+}
+
+.selector {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #222222;
+
+}
+
+select {
+    background-color: #222222;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.item-name {
+    pointer-events: none;
+    font-size: .7rem;
+}
+
+
+@media (max-width: 1280px) {
+
+    .mini-media-scroller {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        background-color: #222222;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+.media-scrollers {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    background-color: #222222;
+    padding-bottom: 50px;
+}
+
+.media-element {
+    width: 150px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.media-element > img {
+    inline-size: 100%;
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    aspect-ratio: 16 / 9;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.media-element :hover {
+    transform: translateY(5px);
+    transition: .5s ease-in-out;
+    box-shadow: 0px 7px 10px rgba(104, 104, 104, 0.5);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+

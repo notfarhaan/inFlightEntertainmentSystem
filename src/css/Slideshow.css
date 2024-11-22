@@ -1,0 +1,21 @@
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100vw;
+    background-color:  #222222;
+  }
+
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+  
+  .slide {
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+  }

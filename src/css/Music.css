@@ -1,0 +1,19 @@
+.music-container {
+    display: flex;
+    height: 93.2vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+}
+
+.title {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: antiquewhite;
+    padding-left: 20px;
+    font-size: 1rem;
+}

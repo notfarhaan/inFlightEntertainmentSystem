@@ -1,0 +1,72 @@
+.song-main-container {
+    height: vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    gap: 2rem;
+}
+
+.song-main-container div {
+    flex: 1;
+}
+
+.song-container {
+   display: flex;
+   gap: 2rem;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 1rem;
+}
+
+.song-name {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .song-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+     }
+
+     .song-name {
+        font-size: .5rem;
+     }
+
+     .song-main-container div {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .song-main-container {
+        height: vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+        gap: 2rem;
+    }
+}
+
